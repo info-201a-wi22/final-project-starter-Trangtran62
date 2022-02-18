@@ -52,5 +52,4 @@ You can also embed plots, for example:
 plot(graph1)
 ```
 
-The chart above shows income distribution by race in white, black, Hispanic, and other groups, highlighting the potential earnings gaps between races. From the graph above, it is clear that most people earn between 0 and 50000 for all races, and the median income of white and other races is slightly higher than those of black and Hispanic communities. Additionally, the white community's third quartile of income is the highest among other races. While most of the observation fall below 50000, All four categories of observations appear outliners that may influence the chart, especially the white community, which includes many outliners that are exceptionally large. For instance, an observation from white races earns more than 30k whereas the only one outliner from black community makes less than 10k. The exceptional values affect the mean, pulling it to the right, resulting in a right-skewed distribution with a median greater than the mean.
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
