@@ -5,5 +5,5 @@ wages <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-projec
 
 graph1 <- ggplot(
   data = wages,
-  mapping = aes(x = race, y = earn, fill = race)
+  mapping = aes(x = race, y = earn, fill = race, options(scipen = 999))
 ) + geom_boxplot() + coord_flip() + ggtitle("Income by race")
