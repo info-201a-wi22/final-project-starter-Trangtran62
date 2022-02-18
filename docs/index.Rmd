@@ -23,6 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # then "source" an R file (data_access.R)
 source("../source/data_access.R")
 source("../source/Graph_1.R")
+source("../source/code_graph2.R")
 data_access_test()
 ```
 
@@ -53,3 +54,9 @@ plot(graph1)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r graph2, echo=FALSE}
+plot(graph2)
+```
+
+This second graph shows the relationship between gender and the amount of wages earned. From this graph it can be seen that males earn a higher amount of money compared to females. The filled part of the graph shows the number of people earning a certain amount,looking at the distribution of male vs female the amount of wages earned seems more evenly distributed for males then it does for females.
