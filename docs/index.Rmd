@@ -47,6 +47,7 @@ data_access_test()
 str(summary_info)
 ```
 The list above is contain important information regards to this data set. For example, number of trails, standard deviation of earning, max & min earning, and the average of earning. These information can help you understand the data set quickly.
+
 ## Aggregate Tables
 
 * These aggregate table shows the average and median income between different groups of people on the basis of race and gender. The main focus of this project is to investigate the variability of income - an indicator of wealth, between different social groups determined by race and gender.
