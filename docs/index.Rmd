@@ -49,15 +49,16 @@ summary(cars)
 * These aggregate table shows the average and median income between different groups of people on the basis of race and gender. The main focus of this project is to investigate the variability of income - an indicator of wealth, between different social groups determined by race and gender.
 ** Average income across racial groups and between genders
 
-```{r}
-View(aggregate_table)
-
+```{r aggregate_table, echo = FALSE}
+library("knitr")
+kable(aggregate_table)
 ```
 
 ** Median income across racial groups and between genders
 
-```{r}
-View(aggregate_table_2)
+```{r aggregate_table_2, echo = FALSE}
+library("knitr")
+kable(aggregate_table_2)
 ```
 
 
