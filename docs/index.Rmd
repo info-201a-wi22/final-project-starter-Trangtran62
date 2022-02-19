@@ -74,13 +74,13 @@ kable(aggregate_table_2)
 plot(graph1)
 ```
 
-The chart above indicates income distribution by race in white, black, Hispanic, and other groups, showing the potential earnings gaps between races. From the graph above, it is clear that most people earn between 0 and 50000 for all races, and the median income of white and other races is slightly higher than those of black and Hispanic communities. While most of the observation fall below 50000, all categories of observations appear outliners that may influence the chart, especially the white community, which includes many outliners that are exceptionally large. For instance, an observation from white races earns more than 30k which is much higher than other observations. These exceptional values affect the mean, pulling it to the right, resulting in a right-skewed distribution with a median greater than the mean.
+The chart above indicates income distribution by race in white, black, Hispanic, and other groups, showing the potential earnings gaps between races. From the graph above, it is clear that most people earn between 0 and 50000 for all races, and the median income of white and other races is slightly higher than those of black and Hispanic communities. While most of the observations fall below 50000, all categories of observations feature outliners that may influence the central tendency of distribution, especially within the white community. That explains our choice of using median. For instance, data points more than 30000 are more likely to be of white people than of other racial groups. These values affect the mean, pulling it to the right, resulting in a right-skewed distribution with a median greater than the mean.
 
 ```{r graph2, echo=FALSE}
 plot(graph2)
 ```
 
-This second graph shows the relationship between gender and the amount of wages earned. From this graph it can be seen that males earn a higher amount of money compared to females. The filled part of the graph shows the number of people earning a certain amount,looking at the distribution of male vs female the amount of wages earned seems more evenly distributed for males then it does for females.
+This second graph shows the relationship between gender and the wages earned. This graph shows that males earn a significantly higher amount of money compared to females. The filled part of the graph shows the number of people earning a certain income rate, looking at the distribution of male vs female, the amount of wages earned seems more evenly distributed for males then it does for females.
 
 **Median Earning Between Different Racial and Gender Groups**
 ```{r graph3, echo=FALSE}
@@ -90,4 +90,4 @@ plot(graph3)
 plot(graph4)
 ```
 
-Graph 3 is would be a combination of the above 3 graph, comparing the the different of the incomes between different genders and race. It is clear to observe that there is significant difference in earings among different ethnic groups. However, the ranking patterns in one group does not match between male and female. For example, white ethnic group is leading the earning in the male group, while it ranks the lowest in the female group
+Graph 3 displays the disparity in earnings in relation with the intersection between race and gender. There is a clear wage gap determined by gender, with males earning higher income than females across all racial groups. According to the graph above (race and income), disparities in income are featured between different racial groups, with white people earning a disproportionately higher income than minoritized groups. However, when looking at the effect of gender and race together on income, the additional contribution of race to the wage gap is unclear, as white female is the group that has the least median income. 
