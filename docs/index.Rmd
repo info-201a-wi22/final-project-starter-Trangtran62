@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 |References | 1.  Chapman, Stephen J., and Nicole Benis. “Ceteris Non Paribus: The Intersectionality of Gender, Race, and Region in the Gender Wage Gap.” Women's Studies International Forum, vol. 65, Elsevier Ltd, 2017, pp. 78–86, https://doi.org/10.1016/j.wsif.2017.10.001. </p>  2. Misra, Joya, and Marta Murray-Close. “The Gender Wage Gap in the United States and Cross Nationally.” Sociology Compass, MisraJ., and Murray-CloseM. (2014), The Gender Wage Gap in the United States and Cross Nationally, Sociology Compass, 8, pages 1281-1295, doi: 10.1111/soc4.12213, vol. 8, no. 11, Blackwell Publishing Ltd, 2014, pp. 1281–95, https://doi.org/10.1111/soc4.12213.</p> 3.  Weinberger, Catherine J. “Race and Gender Wage Gaps in the Market for Recent College Graduates.” Industrial Relations (Berkeley), vol. 37, no. 1, Blackwell Publishers Inc, 1998, pp. 67–84, https://doi.org/10.1111/0019-8676.721998035. |
 
 ## ACCESSING THE /source DIRECTORY
-```{r}
+```{r, echo = FALSE}
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)
@@ -36,11 +36,17 @@ source("../source/data_access.R")
 source("../source/Graph_1.R")
 source("../source/code_graph2.R")
 source("../source/aggregate_table.R")
+source("../source/summary.R")
+source("../source/graph3.R")
+
 data_access_test()
 ```
 
 ## Summary Tables
-
+```{r summary_info, echo = FALSE}
+str(summary_info)
+```
+The list above is contain important information regards to this data set. For example, number of trails, standard deviation of earning, max & min earning, and the average of earning. These information can help you understand the data set quickly.
 ## Aggregate Tables
 
 * These aggregate table shows the average and median income between different groups of people on the basis of race and gender. The main focus of this project is to investigate the variability of income - an indicator of wealth, between different social groups determined by race and gender.
@@ -74,3 +80,13 @@ plot(graph2)
 ```
 
 This second graph shows the relationship between gender and the amount of wages earned. From this graph it can be seen that males earn a higher amount of money compared to females. The filled part of the graph shows the number of people earning a certain amount,looking at the distribution of male vs female the amount of wages earned seems more evenly distributed for males then it does for females.
+
+**Median Earning among Different Races under 2 Genders**
+```{r graph3, echo=FALSE}
+plot(graph3)
+```
+```{r graph4, echo=FALSE}
+plot(graph4)
+```
+
+Graph 3 is would be a combination of the above 3 graph, comparing the the different of the incomes between different genders and race. It is clear to observe that there is significant difference in earings among different ethnic groups. However, the ranking patterns in one group does not match between male and female. For example, white ethnic group is leading the earning in the male group, while it ranks the lowest in the female group
