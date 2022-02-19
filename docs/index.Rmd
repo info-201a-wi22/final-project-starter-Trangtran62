@@ -82,7 +82,7 @@ plot(graph2)
 
 This second graph shows the relationship between gender and the amount of wages earned. From this graph it can be seen that males earn a higher amount of money compared to females. The filled part of the graph shows the number of people earning a certain amount,looking at the distribution of male vs female the amount of wages earned seems more evenly distributed for males then it does for females.
 
-**Median Earning among Different Races under 2 Genders**
+**Median Earning Between Different Racial and Gender Groups**
 ```{r graph3, echo=FALSE}
 plot(graph3)
 ```
