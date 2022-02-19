@@ -39,10 +39,10 @@ combined_list
 combined_data
 
 
-ggplot(combined_data) +
+graph3 <- ggplot(combined_data) +
          geom_col(mapping = aes(x = race, y = male))
 
-ggplot(combined_data) +
+graph4 <- ggplot(combined_data) +
   geom_col(mapping = aes(x = race, y = female, fill = male))
 
                   
