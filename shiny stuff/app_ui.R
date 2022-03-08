@@ -18,14 +18,15 @@ source("tabs/tab_panel_report.R")
 
 ui <- navbarPage(
   includeCSS("www/proj_style.css"),
-  title = "Project Example",
+  title = "Social Determiants of Wage Gaps",
   position = "fixed-top",
 
   # A simple footer
   footer = list(
     tags$style(type = "text/css", "body {padding-top: 70px;}"),
     hr(),
-    HTML("Data For Justice | Info 201 Winter 2022 | Claire Lai, Jiali Liu, Trang Tran, Tony Zhang"),
+    HTML("Data For Justice | Final Deliverable |Info 201 Winter 2022 | Claire Lai, Jiali Liu, 
+         Trang Tran, Tony Zhang"),
     hr()
   ),
 
