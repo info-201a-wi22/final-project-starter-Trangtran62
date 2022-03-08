@@ -7,11 +7,12 @@ library("plotly")
 #wages <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Trangtran62/main/data/wages.csv")
 
 
-#color_input <- selectInput(
-#"color",
-#label = "Color",
-#choices = list("Red" = "red", "Blue" = "blue", "Green" = "green")
-#)
+gender_input <- selectInput(
+  "Sex",
+  label = "Sex",
+  choices = list("Male" = "male", "Female" = "female"),
+  selected = "male"
+)
 
 opacity_input <- sliderInput(
   "opacity",
@@ -23,9 +24,9 @@ opacity_input <- sliderInput(
 
 tab_panel_chart1 <-tabPanel(
   "Chart 1",
-  p("This is chart 1."),
+  h1("Race, Gender and Wage Interactive Graph"),
   
-  #color_input,
+  gender_input,
   
   opacity_input,
   

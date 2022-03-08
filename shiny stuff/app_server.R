@@ -29,9 +29,12 @@ server <- function(input, output) {
   
   output$boxplot <- renderPlotly({
     wages <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Trangtran62/main/data/wages.csv")
+    new_dataset <- wages %>%
+      filter(sex == input$Sex)
+    
     options(scipen=999)
     graph1 <- plot_ly(
-      data = wages,
+      data = new_dataset,
       x = ~race, 
       y = ~earn,
       type = "box",
