@@ -27,6 +27,26 @@ server <- function(input, output) {
     graph2
   })
   
+  output$boxplot <- renderPlotly({
+    wages <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Trangtran62/main/data/wages.csv")
+    options(scipen=999)
+    graph1 <- plot_ly(
+      data = wages,
+      x = ~race, 
+      y = ~earn,
+      type = "box",
+      alpha = input$opacity
+      #color = ~input$color
+    ) %>%
+      layout(
+        title = "Distribution of wage earned by race",
+        xaxis = list(title = "Race"),
+        yaxis = list(title = "Amount of wages earned")
+      )
+    graph1
+  })
+  
+  
 }
 
 
