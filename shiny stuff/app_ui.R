@@ -17,22 +17,15 @@ source("tabs/tab_panel_summary.R")
 source("tabs/tab_panel_report.R")
 
 ui <- navbarPage(
+  includeCSS("www/proj_style.css"),
   title = "Project Example",
   position = "fixed-top",
-
-  # # A simple header
-  # header = list(
-  #   #tags$style(type = "text/css", "body {padding-top: 70px;}"),
-  #   hr(),
-  #   HTML("... My Project Header... "),
-  #   hr()
-  # ),
 
   # A simple footer
   footer = list(
     tags$style(type = "text/css", "body {padding-top: 70px;}"),
     hr(),
-    HTML("... Project Footer ... "),
+    HTML("Data For Justice | Info 201 Winter 2022 | Claire Lai, Jiali Liu, Trang Tran, Tony Zhang"),
     hr()
   ),
 

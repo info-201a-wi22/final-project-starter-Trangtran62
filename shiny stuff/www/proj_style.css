@@ -1,0 +1,23 @@
+h1 {
+  color: #4281A4;
+  font-family: verdana;
+}
+h2 {
+  color: #F7756C;
+  font-family: verdana;
+}
+
+hr {
+  height:3px;
+  border-width:0;
+  color:gray;
+  background-color:#695452
+}
+
+body {
+  background-color: #EBEBEA;
+}
+
+p {
+  color: #562C2C;
+}
