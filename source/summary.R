@@ -14,3 +14,4 @@ summary_info$mean_earning <- mean(wages$earn)
 #  summarise(count = n()) %>%
 #  mutate("%" = round((count / sum(count) * 100), digits = 2))
   summary_info
+  
