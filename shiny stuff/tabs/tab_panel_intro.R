@@ -8,7 +8,8 @@ para4 <- paste0("How does gender identity affect income outcomes?")
 para5 <- paste0("How does the intersectionality of racial and gender identities affect income outcomes?")
 
 tab_panel_intro <-tabPanel(
-    h1 ("Introduction"),
+    "Introduction",
+    h1 ("Introduction")
     p(para1),
     p(para2),
     p(para3),
