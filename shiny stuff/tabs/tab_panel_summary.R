@@ -4,7 +4,7 @@ library(shiny)
 
 tab_panel_summary <-tabPanel(
     "Summary",
-    h1 ("Summary"),
+    h1("Summary"),
     p(strong("There are three main takeaway from this dataset:"),
       p("1. Males earned a significantly higher amount than female regardless of race with similar averaged educational level"),
       p("2. On average, white people have a higher median income than other race"),
