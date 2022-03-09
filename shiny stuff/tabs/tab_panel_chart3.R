@@ -7,15 +7,15 @@ input_bar_one <- selectInput(
   label = "First Bar",
   choices = list("White" = "white", "Black" = "black",
                  "Hipanic" = "hispanic", "Other" = "other"),
-  selected = "white"
+  selected = "White"
 )
 
 input_bar_two <- selectInput(
   "bar_2",
   label = "Second Bar",
   choices = list("White" = "white", "Black" = "black",
-                 "Hipanic" = "hispanic", "Other" = "other"),
-  selected = "black"
+                 "Hispanic" = "hispanic", "Other" = "other"),
+  selected = "Black"
 )
 
 tab_panel_chart3 <-tabPanel(

@@ -86,7 +86,7 @@ server <- function(input, output) {
     combined_data
     
     used_data <- combined_data %>%
-      filter(race == c(input$bar_1, input$bar_2))
+      filter(race == input$bar_1 | race == input$bar_2)
     graph4 <- ggplot(used_data) +
       geom_col(mapping = aes(x = race, y = female, fill = race, color = race))
     graph4
