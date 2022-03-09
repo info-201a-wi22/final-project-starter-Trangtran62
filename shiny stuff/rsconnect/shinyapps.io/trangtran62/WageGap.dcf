@@ -5,9 +5,9 @@ account: trangtran62
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5811345
-bundleId: 5659447
+bundleId: 5662754
 url: https://trangtran62.shinyapps.io/WageGap/
-when: 1646798900.98661
-lastSyncTime: 1646798900.98664
+when: 1646848952.54971
+lastSyncTime: 1646848952.54972
 asMultiple: FALSE
 asStatic: FALSE
