@@ -18,5 +18,3 @@ tab_panel_intro <-tabPanel(
     img(src='illustration.jpeg', height = 200, width = 200)
 )
 
-install.packages("plotly")
-install.packages("shinythemes")

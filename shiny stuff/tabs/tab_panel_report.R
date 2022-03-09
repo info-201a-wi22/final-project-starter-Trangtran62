@@ -1,5 +1,5 @@
 # tab_panel_report
-
+library(markdown)
 library(shiny)
 
 tab_panel_report <-tabPanel(

@@ -1,8 +1,11 @@
+install.packages("markdown")
+
 # Load data set
 Wages <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Trangtran62/main/data/wages.csv")
 View(Wages)
 
 #Change column names
+
 colnames(Wages) <- c("income", "height", "sex", "race", "education_level", "age")
 View(Wages)
 library(dplyr)
